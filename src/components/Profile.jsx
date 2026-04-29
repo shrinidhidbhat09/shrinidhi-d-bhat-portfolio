@@ -11,7 +11,7 @@ function Profile() {
       >
         <div className="profile-image-container">
           <img
-            src="/images/profile-photo.jpeg"
+            src={`${import.meta.env.BASE_URL}images/profile-photo.jpeg`}
             alt="Shrinidhi D Bhat"
             className="profile-image"
             onError={(e) => {
