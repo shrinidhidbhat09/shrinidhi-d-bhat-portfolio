@@ -29,15 +29,6 @@ function Navbar({ isEntered = false }) {
             >
               {item.label}
             </a>
-          ) : item.anchor ? (
-            <a
-              key={item.label}
-              href={isEntered ? item.to : '#'}
-              className={`nav-link ${!isEntered ? 'nav-disabled' : ''}`}
-              onClick={(e) => !isEntered && e.preventDefault()}
-            >
-              {item.label}
-            </a>
           ) : (
             <NavLink
               key={item.label}
@@ -55,8 +46,10 @@ function Navbar({ isEntered = false }) {
       </nav>
       <a
         className="nav-resume"
-        href="/documents/resume.pdf"
+        href={`${import.meta.env.BASE_URL}documents/resume.pdf`}
         download="Shrinidhi_D_Bhat_Resume.pdf"
+        target="_blank"
+        rel="noreferrer"
       >
         Download Resume
       </a>
