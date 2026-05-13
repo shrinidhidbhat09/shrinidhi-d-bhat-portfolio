@@ -8,7 +8,7 @@ const projects = [
     category: 'Data',
     title: 'Federated Query Engine',
     tech: ['Python', 'PostgreSQL', 'MongoDB', 'HTML', 'CSS', 'JS'],
-    description: 'Multi-database query system with modular parsing, planning, and execution pipeline.',
+    description: ': A cloud-native query engine built on AWS (EC2,S3,IAM) featuring a modular parsing and execution pipeline that unifies data retrieval across MongoDB Atlas and Amazon RDS.',
     problem: 'Querying across heterogeneous data sources with different schemas and performance characteristics.',
     approach: 'Built a layered architecture with parsing, planning, and execution phases, using adapters for different database types.',
     systemDesign: 'Modular pipeline with query parsing, optimization, and distributed execution across multiple data stores.',
