@@ -41,7 +41,7 @@ const projects = [
 
     github: '',
 
-    architecture: tdraDiagram
+    architecture: null
   },
 
   {
