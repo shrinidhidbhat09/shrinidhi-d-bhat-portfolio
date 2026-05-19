@@ -1,7 +1,5 @@
-import nlFedqueryDiagram from './architecture_diagrams/federated-query-engine.png';
-import videocallDiagram from './architecture_diagrams/video-calling.png';
-import tdraDiagram from './architecture_diagrams/tdra.png';
-
+import nlFedqueryDiagram from './architecture_diagrams/nl-fedquery.png';
+import videocallDiagram from './architecture_diagrams/videocall.png';
 const projects = [
 
   {
