@@ -26,9 +26,7 @@ function Profile() {
 
           <div className="profile-overview">
             <p>
-              Passionate about building scalable systems and real-time applications.
-              Specializing in distributed systems, mobile development, and clean architecture.
-              Experience in Flutter, Django, PostgreSQL, and system design.
+              I’m a software engineer who enjoys understanding how systems work and building applications that explore those ideas in practice. My work spans data systems and real-time applications, using technologies like Flutter, Django, and PostgreSQL, and I’ve also gained hands-on experience through a 3-month hybrid internship as a Flutter developer. I’m particularly interested in how data flows through systems and how applications behave under real-world conditions, which has led me to explore AWS and cloud-based architectures. I also write about what I learn, breaking down concepts as I build and experiment.
             </p>
 
             <div className="profile-highlights">

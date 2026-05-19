@@ -1,5 +1,6 @@
 import nlFedqueryDiagram from './architecture_diagrams/nl-fedquery.png';
 import videocallDiagram from './architecture_diagrams/videocall.png';
+import tdraDiagram from './architecture_diagrams/tdra.png';
 const projects = [
 
   {
@@ -29,9 +30,9 @@ const projects = [
     title: 'Temporal Differential Reachability Analysis (TDRA) [Major Project]',
     tech: ['Python', 'Java', 'NetworkX', 'Soot', 'JavaParser', 'PyDriller'],
 
-    motivation: 'In our group, we observed that existing static analysis tools focus only on a single version of code and fail to capture how security risks evolve across commits. This motivated us to explore how code changes impact execution paths and security at a structural level.',
+    motivation: 'The  existing static analysis tools evaluate code in isolated snapshots and fail to capture how security risks evolve across commits. This led us to explore how changes between versions introduce new execution paths and potential vulnerabilities.',
 
-    description: 'A static analysis framework that detects security risks introduced by code changes by analyzing execution path differences across commits (Group Project – 4 members, Ongoing).',
+    description: 'A commit-level analysis framework that compares consecutive code versions to identify newly introduced or weakened security paths based on execution reachability (Group Project – 4 members, Ongoing).',
 
     problem: 'Traditional SAST tools analyze fixed snapshots and cannot detect whether a specific commit introduces new exploitable paths or weakens existing security checks.',
 
@@ -41,7 +42,7 @@ const projects = [
 
     github: '',
 
-    architecture: null
+    architecture: tdraDiagram
   },
 
   {
@@ -54,7 +55,7 @@ const projects = [
 
     description: 'Real-time video communication system with robust session handling across app states.',
 
-    problem: 'Maintaining reliable video communication across network fluctuations and different app lifecycle states (foreground, background, terminated).',
+   
 
     approach: 'Implemented BLoC-based state management, token lifecycle handling, and retry strategies with exponential backoff along with backend-driven session control.',
 
@@ -71,7 +72,7 @@ const projects = [
     title: 'BlinkEasy',
     tech: ['Flutter', 'MediaPipe', 'Flask', 'Firebase'],
 
-    motivation: 'I was interested in exploring how computer vision can be used for practical health-related applications, especially using real-time inference on mobile devices.',
+    motivation: 'Experiencing dry eyes during extended screen time led me to think about the problem from a non-medical perspective and explore how computer vision could be used to build a practical solution.',
 
     description: 'Real-time blink detection system for eye health monitoring.',
 
@@ -79,11 +80,11 @@ const projects = [
 
     approach: 'Used MediaPipe for real-time facial landmark detection and blink rate computation with adaptive alerting.',
 
-    systemDesign: 'Edge-based ML inference with cloud synchronization and intelligent notification scheduling.',
+    systemDesign: 'Client-server architecture with real-time blink detection and alert handling.',
 
     github: 'https://github.com/shrinidhidbhat09/blinkeasy',
 
-    architecture: 'blinkeasy.png'
+  
   },
 
   {
@@ -96,15 +97,15 @@ const projects = [
 
     description: 'Movie discovery and watchlist application with real-time synchronization.',
 
-    problem: 'Users need a simple way to track and discover movies across devices.',
+    
 
-    approach: 'Built a reactive UI with search, auto-suggestions, and Firebase-backed watchlist functionality.',
+   problem: 'Built as a learning project to explore BLoC state management and API integration in a Flutter application.',
 
-    systemDesign: 'Offline-first client architecture with caching and cloud synchronization.',
+   systemDesign: 'Simple client-side app with API calls and BLoC-based state management.',
 
     github: 'https://github.com/shrinidhidbhat09/movieshub',
 
-    architecture: 'movieshub.png'
+    
   },
 
   {
@@ -119,9 +120,9 @@ const projects = [
 
     problem: 'Traditional checklist apps suffer from low engagement and high task drop-off rates.',
 
-    approach: 'Applied behavioral design principles with progressive disclosure and contextual feedback.',
+    approach: 'Designed simple interactions to make it easier for users to manage and complete tasks.',
 
-    systemDesign: 'Local-first adaptive UI with intelligent scheduling based on user behavior.',
+systemDesign: 'Frontend-only app with basic task handling and reminder functionality.',
 
     github: 'https://github.com/shrinidhidbhat09/smart-checklist-reminder',
 
