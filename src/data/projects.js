@@ -19,7 +19,7 @@ const projects = [
 
     systemDesign: 'Layered architecture with query parser, optimizer, schema graph engine, and distributed executor coordinating cross-database operations with cost-aware planning.',
 
-    github: 'https://github.com/shrinidhidbhat09/federated-query-engine',
+    github: 'https://github.com/shrinidhidbhat09/nl-fedquery',
 
     architecture: nlFedqueryDiagram
   },
@@ -61,7 +61,7 @@ const projects = [
 
     systemDesign: 'Client-server architecture with real-time signaling, Agora media pipeline, session persistence, and multi-state lifecycle handling.',
 
-    github: 'https://github.com/shrinidhidbhat09/one-to-one-video-calling',
+    github: 'https://github.com/shrinidhidbhat09/video-call-app-flutter',
 
     architecture: videocallDiagram
   },
@@ -82,7 +82,7 @@ const projects = [
 
     systemDesign: 'Client-server architecture with real-time blink detection and alert handling.',
 
-    github: 'https://github.com/shrinidhidbhat09/blinkeasy',
+    github: 'https://github.com/shrinidhidbhat09/blink_easy',
 
   
   },
@@ -103,7 +103,7 @@ const projects = [
 
    systemDesign: 'Simple client-side app with API calls and BLoC-based state management.',
 
-    github: 'https://github.com/shrinidhidbhat09/movieshub',
+    github: '',
 
     
   },
@@ -124,7 +124,7 @@ const projects = [
 
 systemDesign: 'Frontend-only app with basic task handling and reminder functionality.',
 
-    github: 'https://github.com/shrinidhidbhat09/smart-checklist-reminder',
+    github: '',
 
     architecture: 'smart-checklist.png'
   }
