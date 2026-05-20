@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 const navItems = [
   { label: 'Home', to: '/' },
   { label: 'Projects', to: '/projects' },
+  { label: 'Certifications', to: '/certifications' },
   { label: 'Blogs', to: 'https://shrinidhibhat.substack.com/', external: true },
   { label: 'Contact', to: '/contact' }
 ];

@@ -22,7 +22,7 @@ function Profile() {
 
         <div className="profile-info">
           <h1 className="profile-name">Shrinidhi D Bhat</h1>
-          <p className="profile-title">Systems Engineer & Flutter Developer</p>
+          <p className="profile-title"> Backend & System Engineer </p>
 
           <div className="profile-overview">
             <p>

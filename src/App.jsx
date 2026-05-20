@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
 import ProjectDetail from './pages/ProjectDetail.jsx';
 import ContactPage from './pages/Contact.jsx';
+import Certifications from './pages/Certifications.jsx';
 
 function AnimatedRoutes({ isEntered, onEnterSystemChange }) {
   const location = useLocation();
@@ -64,6 +65,19 @@ function AnimatedRoutes({ isEntered, onEnterSystemChange }) {
                   transition={{ duration: 0.45, ease: 'easeOut' }}
                 >
                   <ContactPage />
+                </motion.div>
+              }
+            />
+            <Route
+              path="/certifications"
+              element={
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.45, ease: 'easeOut' }}
+                >
+                  <Certifications />
                 </motion.div>
               }
             />

@@ -520,6 +520,65 @@ button {
   margin-bottom: 8px;
 }
 
+/* Certifications two-column layout */
+.cert-two-col {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.cert-left h2 {
+  margin-top: 0;
+}
+
+.cert-tiles {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 70vh;
+  overflow: auto;
+  padding-right: 8px;
+}
+
+.cert-tile {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 12px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.12s ease;
+}
+
+.cert-tile:hover { transform: translateY(-2px); background: rgba(79,157,255,0.04); }
+
+.cert-tile.expanded { background: linear-gradient(90deg, rgba(79,157,255,0.04), rgba(139,92,246,0.02)); }
+
+.tile-title { font-weight: 600; margin-bottom: 6px; }
+.tile-details { margin-top: 8px; color: var(--muted); font-size: 0.95rem; }
+
+.cert-focus { font-weight:600; margin:6px 0; color:var(--text); }
+.tile-details .cert-desc { margin:6px 0 0; color:var(--muted); font-size:0.95rem; max-height:8rem; overflow:auto; }
+.viewer-caption .cert-desc { margin:8px 0 0; color:var(--muted); max-height:18rem; overflow:auto; }
+
+.cert-right { display:flex; flex-direction: column; gap: 16px; }
+.viewer { display:flex; align-items:center; gap:12px; justify-content:center; }
+.viewer-image-wrap { width: 100%; display:flex; align-items:center; justify-content:center; padding: 12px; }
+.viewer-image { max-width: 100%; max-height: 60vh; border-radius: 10px; border: 1px solid var(--border); box-shadow: var(--shadow); object-fit: contain; }
+.viewer-image.clickable { cursor: pointer; }
+.viewer-arrow { background: transparent; border: 1px solid var(--border); color: var(--text); padding: 10px 12px; border-radius: 8px; font-size: 1rem; }
+.viewer-arrow:hover { background: rgba(79,157,255,0.06); }
+
+.viewer-caption h3 { margin: 0 0 6px; }
+.cert-meta { color: var(--muted); margin: 0 0 8px; }
+.cert-desc { color: var(--muted); margin:0; }
+
+@media (max-width: 900px) {
+  .cert-two-col { grid-template-columns: 1fr; }
+  .cert-tiles { flex-direction: row; overflow-x: auto; padding-bottom: 8px; }
+  .cert-tile { min-width: 220px; }
+}
+
 .metric-card p {
   margin: 0;
   color: var(--muted);
